@@ -57,7 +57,41 @@
         }
     </style>
 </head>
-<body class="pt-10 flex flex-col items-center text-gray-900 min-h-screen">
+<body class="pt-8 flex flex-col items-center text-gray-900 min-h-screen">
+
+    <!-- ✨ 피드백 반영: 최상단 제작 도구 뱃지 (기존 디자인 유지하며 안전하게 추가) ✨ -->
+    <div class="mb-8 flex items-center justify-center bg-gray-900 border border-gray-700 rounded-full px-5 py-2 shadow-md z-10 reveal-section">
+        <span class="text-white text-[12px] font-bold tracking-widest mr-3">제작 도구</span>
+        <div class="flex items-center gap-3">
+            
+            <!-- 피드백 반영: 커스텀 툴팁 및 스케일 업 애니메이션 적용 (Illustrator) -->
+            <div class="relative group cursor-pointer">
+                <!-- 아이콘 크기 커지는 효과 -->
+                <div class="w-6 h-6 bg-white rounded-full flex items-center justify-center p-1 shadow-sm transition-transform duration-300 group-hover:scale-125 group-hover:shadow-md">
+                    <img src="https://i.imgur.com/jqO8N6R.png" alt="Illustrator" class="w-full h-full object-contain">
+                </div>
+                <!-- 위로 떠오르는 말풍선 -->
+                <div class="absolute -top-9 left-1/2 -translate-x-1/2 bg-black text-white text-[10px] font-black tracking-wider px-2.5 py-1 rounded shadow-lg opacity-0 pointer-events-none transition-all duration-300 group-hover:opacity-100 group-hover:-translate-y-1 whitespace-nowrap z-50">
+                    Illustrator
+                    <div class="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-black rotate-45"></div>
+                </div>
+            </div>
+            
+            <!-- 피드백 반영: 커스텀 툴팁 및 스케일 업 애니메이션 적용 (Gemini) -->
+            <div class="relative group cursor-pointer">
+                <!-- 아이콘 크기 커지는 효과 -->
+                <div class="w-6 h-6 bg-white rounded-full flex items-center justify-center p-1 shadow-sm transition-transform duration-300 group-hover:scale-125 group-hover:shadow-md">
+                    <img src="https://i.imgur.com/nV88NPt.png" alt="Gemini" class="w-full h-full object-contain">
+                </div>
+                <!-- 위로 떠오르는 말풍선 -->
+                <div class="absolute -top-9 left-1/2 -translate-x-1/2 bg-black text-white text-[10px] font-black tracking-wider px-2.5 py-1 rounded shadow-lg opacity-0 pointer-events-none transition-all duration-300 group-hover:opacity-100 group-hover:-translate-y-1 whitespace-nowrap z-50">
+                    Gemini
+                    <div class="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-black rotate-45"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <!-- 뉴스레터 메인 컨테이너 (첫 번째 블록) -->
     <div class="newsletter-container w-full max-w-3xl mx-auto rounded-none sm:rounded-2xl overflow-hidden relative">
@@ -216,7 +250,6 @@
             <div class="flex-grow border-t-2 border-black"></div>
         </div>
 
-        <!-- 피드백 반영: 마이너스 마진 및 배경색을 제거하고 컨테이너 패딩에 맞춰 깔끔하게 정렬 -->
         <div>
             <div class="text-center mb-16 sm:mb-24 reveal-section">
                 
@@ -299,7 +332,6 @@
 
                     <!-- Card 4 -->
                     <div class="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-200 flex flex-col transition-all duration-300 hover:shadow-md hover:border-gray-300 reveal-section">
-                        <!-- 전달해주신 이미지 링크 유지 -->
                         <img src="https://i.imgur.com/aePLbP4.png" alt="자동 번역" class="h-56 w-full object-cover rounded-lg mb-6 border border-gray-100">
                         <h3 class="font-bold text-[14px] sm:text-[16px] text-black mb-2.5 leading-snug block truncate">④ 자동 번역 기능</h3>
                         <div class="mb-4 h-6 flex items-center">
@@ -406,7 +438,6 @@
                     </div>
                 </div>
 
-                <!-- 피드백 반영: 개별 박스로 분리됨에 따라 하단 마진 축소 (mt-28 mb-10 -> mt-20) -->
                 <div class="mt-20 reveal-section flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
                     <div class="w-36 h-36 sm:w-48 sm:h-48 rounded-full overflow-hidden shrink-0 shadow-md border border-gray-200 bg-[#e2e8f0] flex items-center justify-center">
                         <img src="https://i.imgur.com/Bl3dNID.png" alt="" class="w-full h-full object-cover">
@@ -426,10 +457,8 @@
     <!-- 네 번째 연하늘색 블록 (에필로그 및 외부 구독 영역) -->
     <div class="w-full max-w-3xl px-4 sm:px-0 mt-8 sm:mt-12 reveal-section flex flex-col">
         
-        <!-- 에필로그 박스 (피드백 반영: 배경색을 더 연한 파스텔 연두색 #bbf7d0 으로 변경) -->
         <div class="bg-[#bbf7d0] rounded-t-[24px] rounded-b-none p-8 sm:p-10 shadow-[0_4px_10px_rgba(0,0,0,0.03)] relative overflow-hidden flex flex-col">
             <div class="relative z-10 w-full">
-                <!-- 피드백 반영: 체크 아이콘을 깔끔한 검정색(다크 그레이) 원형 체크 SVG로 교체 -->
                 <h3 class="text-[22px] sm:text-[26px] font-black text-gray-900 mb-8 leading-tight tracking-tight flex items-center gap-3">
                     <svg class="w-8 h-8 sm:w-9 sm:h-9 drop-shadow-md text-gray-900" viewBox="0 0 24 24" fill="currentColor">
                         <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53-1.638-1.638a.75.75 0 10-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
@@ -437,9 +466,8 @@
                     테헤란 IP 인사이트
                 </h3>
                 
-                <!-- 피드백 반영: 전달해주신 텍스트와 줄바꿈, 문단 띄어쓰기를 그대로 복사하여 완벽하게 적용 -->
                 <p class="text-[14px] sm:text-[15px] text-gray-800 font-medium leading-relaxed keep-all mb-6">
-                    급변하는 시장 속에서 기업이 살아남기 위한 가장 확실한 무기는 '독점적 권리'의 확보입니다.<br>
+                    급변하는 시장 속에서 기업이 살아남기 위한 가장 확실 무기는 '독점적 권리'의 확보입니다.<br>
                     이번 호에서 다룬 특허 분쟁 사례들이 대표님들의 비즈니스 리스크를 점검하고 새로운 방어 전략을 세우는 데 실질적인 도움이 되었기를 바랍니다.
                 </p>
                 <p class="text-[14px] sm:text-[15px] text-gray-800 font-medium leading-relaxed keep-all">
@@ -449,21 +477,14 @@
             </div>
         </div>
 
-        <!-- 외부로 분리되어 닫히지 않은 형태의 하단 영역 -->
-        <!-- 피드백 반영: 상/하단 간격을 기존 대비 약 20% 축소 (pt-20 sm:pt-24 pb-8) -->
         <div class="w-full pt-20 sm:pt-24 pb-8 text-center relative">
-            
-            <!-- 피드백 반영: 폰트 굵기 얇게 수정 (font-medium -> font-normal) -->
             <h4 class="text-[20px] sm:text-[24px] font-normal text-gray-900 mb-8 sm:mb-10 keep-all leading-snug">
                 지식재산 상담이 필요할 때,<br>특허법인 테헤란
             </h4>
-            
             <div class="relative inline-block">
-                <!-- 버튼이 화살표보다 뒤로 가거나 레이아웃 겹침을 방지하기 위해 relative z-10 추가 -->
                 <button class="bg-black text-white px-12 py-3.5 rounded-full font-bold text-[18px] hover:bg-gray-800 transition shadow-md w-full sm:w-auto relative z-10">
                     상담 문의하기
                 </button>
-                <!-- 피드백 반영: 화살표 색상을 진한 연두색(#22c55e)으로 포인트 수정 -->
                 <svg width="65" height="74" viewBox="0 0 65 74" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute -right-2 -top-10 sm:-right-6 sm:-top-12 w-12 h-14 sm:w-16 sm:h-20 pointer-events-none z-20">
                     <path d="M62.6391 2.37877C57.8574 15.3957 49.3364 34.3323 57.1706 44.8219C64.6702 54.8633 65.5161 38.3188 56.4022 32.8837C42.0673 24.3377 15.9388 53.6496 6.96985 64.6853" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round"/>
                     <path d="M19.4678 54.0048C14.0792 59.1867 5.75988 66.8631 3.51322 71.3995C7.9406 70.3662 20.0383 69.5218 25.176 69.6053" stroke="#22c55e" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -471,23 +492,16 @@
             </div>
         </div>
 
-    </div> <!-- 두 번째 블록(에필로그+구독) 종료 -->
+    </div> <!-- 네 번째 블록 종료 -->
 
-    <!-- ✨ 피드백 반영: 레퍼런스 스타일의 새로운 하단 정보(푸터) 블록 (세 번째 블록) ✨ -->
-    <!-- 피드백 반영: 세 번째 블록 위쪽 여백도 약 20% 축소 (mt-8 sm:mt-10) -->
+    <!-- 푸터 (다섯 번째 블록) -->
     <div class="w-full max-w-4xl px-4 sm:px-0 mt-8 sm:mt-10 mb-24 reveal-section">
-        <!-- 연회색 라운드 박스 -->
         <div class="bg-[#f2f2f2] rounded-[24px] py-10 sm:py-12 flex flex-col sm:flex-row items-center justify-between w-full shadow-[0_4px_10px_rgba(0,0,0,0.03)] relative overflow-hidden">
-            
-            <!-- 피드백 반영: 로고를 좌측으로 살짝 당기기 위해 좌측 패딩 줄임(pl-6 sm:pl-12 -> pl-2 sm:pl-6) -->
             <div class="flex-1 flex justify-center w-full sm:w-auto mb-6 sm:mb-0 pl-2 sm:pl-6">
-                <!-- 피드백 반영: 로고 크기 약 20% 축소 (w-16 sm:w-20 -> w-12 sm:w-16) -->
                 <div class="w-12 sm:w-16 shrink-0">
                     <img src="https://i.imgur.com/lrlhU4L.png" alt="" class="w-full h-auto mix-blend-multiply">
                 </div>
             </div>
-            
-            <!-- 중앙: 텍스트 영역 (블록 자체는 정중앙 배치, 내부 텍스트는 items-start로 좌측 정렬 유지) -->
             <div class="flex-none flex flex-col items-center sm:items-start text-center sm:text-left gap-2.5 z-10 px-4">
                 <p class="font-bold text-gray-900 text-[15px] sm:text-[16px] keep-all">
                     나의 소중한 권리를 지키는 곳, 특허법인 테헤란
@@ -501,45 +515,43 @@
                     © 2025 Teheran. All rights reserved.
                 </p>
             </div>
-
-            <!-- 우측: 인스타그램 아이콘 (좌측 로고와 동일한 공간(flex-1)을 차지하게 하여 중앙 텍스트가 정확히 가운데 오도록 함) -->
             <div class="flex-1 flex justify-center sm:justify-end w-full sm:w-auto pr-0 sm:pr-10 md:pr-14 mt-6 sm:mt-0">
                 <a href="#" class="text-gray-800 hover:text-black transition inline-block">
                     <svg class="w-9 h-9 sm:w-10 sm:h-10" fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
-                    </svg>
-                </a>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-
-    <!-- ✨ 스크롤 애니메이션 작동 자바스크립트 ✨ -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1 // 요소가 10% 보일 때 애니메이션 실행
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                    } else {
-                        // 화면 상단으로 벗어날 때 덜덜거리는 떨림(Jitter) 현상을 방지
-                        if (entry.boundingClientRect.top > 0) {
-                            entry.target.classList.remove('active');
+    
+        <!-- ✨ 스크롤 애니메이션 작동 자바스크립트 ✨ -->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.1 // 요소가 10% 보일 때 애니메이션 실행
+                };
+    
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                        } else {
+                            // 화면 상단으로 벗어날 때 덜덜거리는 떨림(Jitter) 현상을 방지
+                            if (entry.boundingClientRect.top > 0) {
+                                entry.target.classList.remove('active');
+                            }
                         }
-                    }
+                    });
+                }, observerOptions);
+    
+                const revealElements = document.querySelectorAll('.reveal-section');
+                revealElements.forEach((el) => {
+                    observer.observe(el);
                 });
-            }, observerOptions);
-
-            const revealElements = document.querySelectorAll('.reveal-section');
-            revealElements.forEach((el) => {
-                observer.observe(el);
             });
-        });
-    </script>
-</body>
-</html>
+        </script>
+    </body>
+    </html>
